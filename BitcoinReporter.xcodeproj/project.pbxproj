@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D0B1F80289F600000D1354F /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B1F7F289F600000D1354F /* CryptoModel.swift */; };
+		4D0B1F8228A02D9A00D1354F /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B1F8128A02D9A00D1354F /* CoinManager.swift */; };
+		4D0B1F8428A0310900D1354F /* CryptoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B1F8328A0310900D1354F /* CryptoData.swift */; };
 		4D11B8DC2899CD3700907CDC /* BitcoinReporterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D11B8DB2899CD3700907CDC /* BitcoinReporterApp.swift */; };
 		4D11B8DE2899CD3700907CDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D11B8DD2899CD3700907CDC /* ContentView.swift */; };
 		4D11B8E02899CD3800907CDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D11B8DF2899CD3800907CDC /* Assets.xcassets */; };
 		4D11B8E32899CD3800907CDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D11B8E22899CD3800907CDC /* Preview Assets.xcassets */; };
+		4D11B8EB2899D7EF00907CDC /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D11B8EA2899D7EF00907CDC /* KeyboardHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D0B1F7F289F600000D1354F /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
+		4D0B1F8128A02D9A00D1354F /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
+		4D0B1F8328A0310900D1354F /* CryptoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoData.swift; sourceTree = "<group>"; };
 		4D11B8D82899CD3700907CDC /* BitcoinReporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinReporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D11B8DB2899CD3700907CDC /* BitcoinReporterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinReporterApp.swift; sourceTree = "<group>"; };
 		4D11B8DD2899CD3700907CDC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4D11B8DF2899CD3800907CDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D11B8E22899CD3800907CDC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4D11B8EA2899D7EF00907CDC /* KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,10 @@
 		4D11B8DA2899CD3700907CDC /* BitcoinReporter */ = {
 			isa = PBXGroup;
 			children = (
+				4D11B8ED2899D88200907CDC /* Models */,
+				4D11B8E92899D7DC00907CDC /* Controller */,
 				4D11B8DB2899CD3700907CDC /* BitcoinReporterApp.swift */,
-				4D11B8DD2899CD3700907CDC /* ContentView.swift */,
+				4D11B8EC2899D87700907CDC /* View */,
 				4D11B8DF2899CD3800907CDC /* Assets.xcassets */,
 				4D11B8E12899CD3800907CDC /* Preview Content */,
 			);
@@ -65,6 +75,32 @@
 				4D11B8E22899CD3800907CDC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4D11B8E92899D7DC00907CDC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4D11B8EA2899D7EF00907CDC /* KeyboardHandler.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4D11B8EC2899D87700907CDC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D11B8DD2899CD3700907CDC /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D11B8ED2899D88200907CDC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D0B1F7F289F600000D1354F /* CryptoModel.swift */,
+				4D0B1F8128A02D9A00D1354F /* CoinManager.swift */,
+				4D0B1F8328A0310900D1354F /* CryptoData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D0B1F8228A02D9A00D1354F /* CoinManager.swift in Sources */,
+				4D11B8EB2899D7EF00907CDC /* KeyboardHandler.swift in Sources */,
 				4D11B8DE2899CD3700907CDC /* ContentView.swift in Sources */,
+				4D0B1F80289F600000D1354F /* CryptoModel.swift in Sources */,
+				4D0B1F8428A0310900D1354F /* CryptoData.swift in Sources */,
 				4D11B8DC2899CD3700907CDC /* BitcoinReporterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
